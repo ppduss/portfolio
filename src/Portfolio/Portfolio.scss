@@ -1,16 +1,48 @@
 @import '../global.scss';
 
+.main_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+      "header"
+      "mars" 
+      "coffee"
+      "photo";
+}
+
 .header {
-  min-height: 200px;
+  display: flex;
+  // height: 400px;
   background-color: black;
+  justify-items: center;
+  align-items: center;
+  .face {
+    border-radius: 130px;
+    width: 260px;
+    border: 2px solid white;
+    margin: 50px;
+  }
+  .title {
+    font-size: 4rem;
+    color: lightgoldenrodyellow;
+  }
+  .subtitle {
+    font-size: 3rem;
+    color: lightgoldenrodyellow;
+  }
 }
 
 .Mars {
   grid-area: mars;
+  max-height: 700px;
+  overflow: hidden;
 }
 .Coffee {
   grid-area: coffee;
+  background-color: lightgoldenrodyellow;
+  height: 200px;
 }
 .Photo {
   grid-area: photo;
+  background-color: white;
 }
