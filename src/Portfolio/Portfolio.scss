@@ -1,0 +1,16 @@
+@import '../global.scss';
+
+.header {
+  min-height: 200px;
+  background-color: black;
+}
+
+.Mars {
+  grid-area: mars;
+}
+.Coffee {
+  grid-area: coffee;
+}
+.Photo {
+  grid-area: photo;
+}
