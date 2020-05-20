@@ -1,17 +1,27 @@
 @import '../global.scss';
 
+.title {
+    font-size: 4rem;
+    color: lightgoldenrodyellow;
+}
+.subtitle {
+    font-size: 2rem;
+    color: lightgoldenrodyellow;
+ }
+
 .main_container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 5% 1fr 5%;
   grid-template-areas: 
-      "header"
-      "mars" 
-      "coffee"
-      "photo";
+      "header header header"
+      ". mars ." 
+      ". coffee. "
+      ". photo .";
 }
 
 .header {
-  display: flex;
+  grid-area: header;
+  // display: flex;
   // height: 400px;
   background-color: black;
   justify-items: center;
@@ -22,27 +32,25 @@
     border: 2px solid white;
     margin: 50px;
   }
-  .title {
-    font-size: 4rem;
-    color: lightgoldenrodyellow;
-  }
-  .subtitle {
-    font-size: 3rem;
-    color: lightgoldenrodyellow;
-  }
+ 
 }
 
 .Mars {
+  height: 500px;
   grid-area: mars;
-  max-height: 700px;
   overflow: hidden;
 }
 .Coffee {
+  margin-top: 200px;
+  height: 500px;
   grid-area: coffee;
-  background-color: lightgoldenrodyellow;
-  height: 200px;
+  background-color: rgb(120, 176, 221);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='670' height='80.4' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23dcbf87' stroke-width='2' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+ 
 }
 .Photo {
+  margin-top: 200px;
+  height: 500px;
   grid-area: photo;
   background-color: white;
 }
