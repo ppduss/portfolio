@@ -1,11 +1,20 @@
-$col1: #00474f;
-$col2: #ed3801;
-$col3: #ff8035;
-$col4: #ede2cf;
+@import "~animate.css/animate.css";
+
+$col1a: #00474f;
+$col1b: #ed3801;
+$col1c: #ff8035;
+$col1d: #ede2cf;
+
+$col2a: #102733;
+$col2b: #ec5334;
+$col2c: #278994;
+$col2d: #efe9d6;
+
+$colx: #ef39d6;
 
 
 body {
-  background-color: $col1;
+  background-color: $col2d;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
