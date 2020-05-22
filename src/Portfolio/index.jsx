@@ -8,28 +8,34 @@ const App = () => {
     <div className="main_container">
       <div className="header_container">
         <div className="header_content">
-          <img className="face" src={face} alt="profile shot"/>
-          <div className="title">Hi, I'm Patrick
-           <div className="subtitle">I'm a front-end developer</div>
+          <img className="face" src={face} alt="profile shot" />
+          <div className="text_box">
+            <div className="greetings">Hi, I'm Patrick</div>
+            <div className="iam">I'm a front-end developer</div>
           </div>
         </div>
       </div>
-      <div className="project" id="Mars">
+      <div id="transition1"></div>
+      <div id="transition2"></div>
+      <div id="transition3"></div>
+      <div className="project_container">
+        <div className="project" id="Mars">
         <div id="marsBox">
           <div className="title ">The Mars Weather Network</div>
-          <div className="subtitle">Weather report using two NASA APIs.</div>
+          <div className="subtitle">A X-day weather report using the latest data trasmitted from Mars using two NASA APIs.</div>
         </div>
-      </div>
-      <div className="project" id="Coffee">
+        </div>
+        <div className="project" id="Coffee">
         <div id="coffeeBox">
           <div className="title ">Coffee Prescriber</div>
-          <div className="subtitle">Blah blah blah, something something</div>
+          <div className="subtitle">A playful app that helps gauge your happiness to productivity ratio as your drink coffee and wether it's wise to keep drinking.</div>
         </div>
-      </div>
-      <div className="project" id="Photo">
+        </div>
+        <div className="project" id="Photo">
         <div id="photoBox">
           <div className="title "> Photography Portfolio</div>
           <div className="subtitle">Blah blah blah, something something</div>
+        </div>
         </div>
       </div>
    </div>
