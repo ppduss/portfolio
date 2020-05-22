@@ -1,19 +1,26 @@
 @import '../global.scss';
+// @importgreen '../Assets/greenery.jpeg';
 
 @mixin projectTitles($background, $border, $font) {
   background-color: $background;
-  border: 1.5px solid $border;
+  border: 8px solid $border;
   color: $font;
-  padding: 20px;
+  // padding: 15px;
   padding-left: 400px;
   padding-right: 400px;
   border-radius: 25px;
 }
-
+.footer {
+  margin-top: 150px;
+  height: 100px;
+  width: 100%;
+  background-color: $col2c;
+}
 .title {
     text-align: center;
+    margin-top: 14px;
     width: 600px;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     animation-duration: 4s;
     animation-name: fadeIn;
     z-index: 3;
@@ -21,25 +28,29 @@
 }
 .subtitle {
     text-align: center;
-    // margin-top: 8px;
+    margin-top: 4px;
+    margin-bottom: 20px;
     width: 600px;
-    font-size: 1.4rem;
-    color: lightgoldenrodyellow;
+    font-size: 1.3rem;
+    color: $col2d;
     animation-duration: 4s;
     animation-name: fadeIn;
     z-index: 3;
  }
 #marsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   animation-name: fadeIn;
-  @include projectTitles($col2a, #fdc00c, $col2b)
+  @include projectTitles($col2a, $col2d, $col2b)
 }
 #coffeeBox {
   animation-name: fadeIn;
-  @include projectTitles(rgb(165, 119, 66), whitesmoke, black)
+  @include projectTitles(rgb(120, 176, 221), $col2d, rgb(83, 53, 22))
 }
 #photoBox {
   animation-name: fadeIn;
-  @include projectTitles($col2a, whitesmoke, $col2b)
+  @include projectTitles($col2a, $col2d, $col2b)
 }
 
 .main_container {
@@ -69,14 +80,17 @@
       border: 4px solid white;
       margin: 50px;
     }
+    .text_box {
+      max-width: 60%;
+    }
     .greetings {
       color: $col2b;
-      font-size: 3.2rem;
+      font-size: 3rem;
       margin-top: 70px;
     }
     .iam {
       color: $col2d;
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-top: 15px;
     }
   }
@@ -89,13 +103,13 @@
 }
 #transition2 {
   // margin-top: 10px;
-  background-color: $col2c;
+  background-color: $col2d;
   width: 75%;
   border-bottom: 20px dashed $col2a;
 }
 #transition3 {
   // margin-top: 10px;
-  background-color: $col2c;
+  background-color: $col2d;
   width: 75%;
   border-bottom: 20px dashed $col2a;
 }
@@ -105,7 +119,9 @@
   flex-direction: column;
   align-items: center;
   width: 75%;
-  background-image: linear-gradient($col2c, $col2c, $col2d);
+  height: auto;
+  background-image: linear-gradient($col2d, $col2d);
+  border-radius: 40px 40px 30px 30px;
 }
 .project {
   display: flex;
@@ -115,7 +131,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 20px;
   // border: 6px solid $colx;
 }
 
@@ -128,22 +144,23 @@
   animation: openSesame 3s;
 };
 #Coffee {
-  background-color: rgb(120, 176, 221);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='670' height='80.4' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23dcbf87' stroke-width='8' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #c4a464;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='670' height='80.4' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23815e31' stroke-width='20' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
   animation: openSesame 3s;
 }
 #Photo {
   background-color: white;
-  // background-image: ;
+  background-image: url(../Assets/greenery.jpeg);
+  background-size: cover;
   animation: openSesame 3s;
 }
 
 @keyframes openSesame {
   from {
-    width: 50%;
+    width: 55%;
   }
   to {
-    width: 70%;
+    width: 80%;
   }
 }
 
