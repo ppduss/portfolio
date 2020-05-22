@@ -11,7 +11,7 @@ const App = () => {
           <img className="face" src={face} alt="profile shot" />
           <div className="text_box">
             <div className="greetings">Hi, I'm Patrick</div>
-            <div className="iam">I'm a front-end developer living in beautiful Montréal  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus distinctio eum at iure veritatis ab tempore, tenetur, laborum, quidem dicta! Deleniti velit quis sapiente natus, maxime maiores sit aut.</div>
+            <div className="iam">I'm a front-end developer living in beautiful Montréal  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus distinctio eum at iure veritatis ab tempore, tenetur,</div>
           </div>
         </div>
       </div>
