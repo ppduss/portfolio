@@ -139,6 +139,7 @@
     }
     .text_box {
       max-width: 90%;
+      // background-color: $col2d;
       @media (min-width: 480px){
         max-width: 80%;
       }
