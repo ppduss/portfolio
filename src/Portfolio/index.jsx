@@ -37,6 +37,12 @@ const App = () => {
             <div className="subtitle">Blah blah blah, something something</div>
           </div>
         </div>
+        <div className="project" id="Ratatap">
+          <a href="https://youtu.be/OX1kVVcx0Xw" id="photoBox">
+            <div className="title "> Ratatap </div>
+            <div className="subtitle"> Patatap drum pad clone</div>
+          </a>
+        </div>
         <div className="footer">This is the footer</div>
       </div>
    </div>
