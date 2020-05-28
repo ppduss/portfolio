@@ -1,6 +1,7 @@
 import React from 'react';
 import './Portfolio.scss';
-import face from '../Assets/face.jpeg'
+import face from '../Assets/face3.jpg';
+
 
 const App = () => {
 
@@ -31,17 +32,17 @@ const App = () => {
             <div className="subtitle">A playful app that helps gauge your happiness to productivity ratio as your drink coffee and wether it's wise to keep drinking.</div>
           </div>
         </div>
-        <div className="project" id="Photo">
-          <div id="photoBox">
-            <div className="title "> Photography Portfolio</div>
-            <div className="subtitle">Blah blah blah, something something</div>
-          </div>
-        </div>
         <div className="project" id="Ratatap">
           <a href="https://youtu.be/OX1kVVcx0Xw" id="photoBox">
             <div className="title "> Ratatap </div>
             <div className="subtitle"> Patatap drum pad clone</div>
           </a>
+        </div>
+        <div className="project" id="Photo">
+          <div id="photoBox">
+            <div className="title "> Combustion Photography</div>
+            <div className="subtitle">Photography portfolio made exclusively using Adobe Creative Cloud applications.</div>
+          </div>
         </div>
         <div className="footer">This is the footer</div>
       </div>
