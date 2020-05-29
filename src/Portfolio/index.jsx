@@ -20,28 +20,60 @@ const App = () => {
       <div id="transition2"></div>
       <div id="transition3"></div>
       <div className="project_container">
-        <div className="project" id="Mars">
-          <div id="marsBox">
+        <div className="block">
+          <div className="project" id="Mars">
+           <div id="marsBox">
             <div className="title ">The Mars Weather Network</div>
             <div className="subtitle">A X-day weather report using the latest data trasmitted from Mars using two NASA APIs.</div>
+            </div>
+          </div>
+          <div className="tools" >
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
           </div>
         </div>
-        <div className="project" id="Coffee">
-          <div id="coffeeBox">
-           <div className="title ">Coffee Prescriber</div>
+        <div className="block">
+          <div className="tools">
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+          </div>
+          <div className="project" id="Coffee">
+           <div id="coffeeBox">
+             <div className="title ">Coffee Prescriber</div>
             <div className="subtitle">A playful app that helps gauge your happiness to productivity ratio as your drink coffee and wether it's wise to keep drinking.</div>
           </div>
         </div>
-        <div className="project" id="Ratatap">
-          <a href="https://youtu.be/OX1kVVcx0Xw" id="photoBox">
+        </div>
+        <div className="block">
+          <div className="project" id="Ratatap">
+            <a href="https://youtu.be/OX1kVVcx0Xw" id="photoBox">
             <div className="title "> Ratatap </div>
             <div className="subtitle"> Patatap drum pad clone</div>
-          </a>
+            </a>
+          </div>
+          <div className="tools">
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+          </div>
+        </div>
+        <div className="block">
+        <div className="tools">
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
         </div>
         <div className="project" id="Photo">
           <div id="photoBox">
             <div className="title "> Combustion Photography</div>
             <div className="subtitle">Photography portfolio made exclusively using Adobe Creative Cloud applications.</div>
+          </div>
           </div>
         </div>
         <div className="footer">This is the footer</div>
