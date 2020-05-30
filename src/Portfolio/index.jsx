@@ -28,18 +28,22 @@ const App = () => {
             </div>
           </div>
           <div className="tools" >
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
+            <div>React</div>
+            <div>CSS3</div>
+            <div>HTML5</div>
+            <div>Responsive</div>
+            <div><a href="">View live</a></div>
+            <div><a href="">View on GitHub</a></div>
           </div>
         </div>
         <div className="block">
-          <div className="tools">
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
+          <div className="tools even">
+            <div>React</div>
+            <div>CSS3</div>
+            <div>HTML5</div>
+            <div>Responsive</div>
+            <div><a href="">View live</a></div>
+            <div><a href="">View on GitHub</a></div>
           </div>
           <div className="project" id="Coffee">
            <div id="coffeeBox">
@@ -56,23 +60,27 @@ const App = () => {
             </a>
           </div>
           <div className="tools">
+            <div>tesrt</div>
+            <div>CSS3</div>
+            <div>HTML5</div>
             <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
+             <div><a href="">View live</a></div>
+            <div><a href="">View on GitHub</a></div>
           </div>
         </div>
         <div className="block">
-        <div className="tools">
+        <div className="tools even">
             <div>test</div>
             <div>test</div>
             <div>test</div>
             <div>test</div>
+           <div><a href="">View live</a></div>
+            <div><a href="">View on GitHub</a></div>
         </div>
         <div className="project" id="Photo">
           <div id="photoBox">
             <div className="title "> Combustion Photography</div>
-            <div className="subtitle">Photography portfolio made exclusively using Adobe Creative Cloud applications.</div>
+            <div className="subtitle">Photography portfolio made exclusively with Adobe Creative Cloud applications.</div>
           </div>
           </div>
         </div>
