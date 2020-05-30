@@ -1,6 +1,9 @@
 @import '../global.scss';
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap');
 
+a:link {
+  text-decoration: none;
+}
 @keyframes openSesame {
   from {
     width: 50%;
@@ -320,8 +323,7 @@
   font-weight: 400;
   color: black;
   font-size: 1.3rem;
-  width: 200px;
-  height: 200px;
+  line-height: 1.8rem;
 }
 .block {
   width: 100%;
@@ -330,5 +332,17 @@
   align-items: baseline;
 }
 .even {
+  display: flex;
+  flex-direction: column;
   text-align: right;
+}
+.button {
+  color: black;
+  font-size: 1.1rem;
+  border: 2px solid rgb(53, 53, 53);
+  margin: 12px 0px 10px 0px;
+  padding: 6px 0px;
+  text-align: center;
+  width: 130px;
+  align-self: right;
 }
