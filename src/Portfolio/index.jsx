@@ -32,8 +32,8 @@ const App = () => {
             <div>CSS3</div>
             <div>HTML5</div>
             <div>Responsive</div>
-            <div className="button"><a href="">View live</a></div>
-            <div className="button"><a href="">View on GitHub</a></div>
+            <div className="button"><a href="https://combustionphotography.com/">View live</a></div>
+            <div className="button"><a href="https://combustionphotography.com/">View on GitHub</a></div>
           </div>
         </div>
         <div className="block">
@@ -42,8 +42,8 @@ const App = () => {
             <div>CSS3</div>
             <div>HTML5</div>
             <div>Responsive</div>
-            <div className="button"><a href="">View live</a></div>
-            <div className="button"><a href="">View on GitHub</a></div>
+            <div className="button"><a href="https://combustionphotography.com/">View live</a></div>
+            <div className="button"><a href="https://combustionphotography.com/">View on GitHub</a></div>
           </div>
           <div className="project" id="Coffee">
            <div id="coffeeBox">
@@ -64,8 +64,8 @@ const App = () => {
             <div>CSS3</div>
             <div>HTML5</div>
             <div>test</div>
-             <div className="button"><a href="">View live</a></div>
-            <div className="button"><a href="">View on GitHub</a></div>
+             <div className="button"><a href="https://combustionphotography.com/">View live</a></div>
+            <div className="button"><a href="https://combustionphotography.com/">View on GitHub</a></div>
           </div>
         </div>
         <div className="block">
@@ -74,8 +74,8 @@ const App = () => {
             <div>test</div>
             <div>test</div>
             <div>test</div>
-           <div className="button"><a href="">View live</a></div>
-            <div className="button"><a href="">View on GitHub</a></div>
+           <div className="button"><a href="https://combustionphotography.com/">View live</a></div>
+            <div className="button"><a href="https://combustionphotography.com/">View on GitHub</a></div>
         </div>
         <div className="project" id="Photo">
           <div id="photoBox">
