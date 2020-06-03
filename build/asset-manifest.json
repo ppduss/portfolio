@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/ppduss/portfoliostatic/css/main.189c952d.chunk.css",
+    "main.js": "/ppduss/portfoliostatic/js/main.a95fc366.chunk.js",
+    "main.js.map": "/ppduss/portfoliostatic/js/main.a95fc366.chunk.js.map",
+    "runtime-main.js": "/ppduss/portfoliostatic/js/runtime-main.47ce2bfd.js",
+    "runtime-main.js.map": "/ppduss/portfoliostatic/js/runtime-main.47ce2bfd.js.map",
+    "static/css/2.4fdbf1be.chunk.css": "/ppduss/portfoliostatic/css/2.4fdbf1be.chunk.css",
+    "static/js/2.2f5ef2c2.chunk.js": "/ppduss/portfoliostatic/js/2.2f5ef2c2.chunk.js",
+    "static/js/2.2f5ef2c2.chunk.js.map": "/ppduss/portfoliostatic/js/2.2f5ef2c2.chunk.js.map",
+    "index.html": "/ppduss/portfolioindex.html",
+    "precache-manifest.b10f91d705582e7e937202090a951b13.js": "/ppduss/portfolioprecache-manifest.b10f91d705582e7e937202090a951b13.js",
+    "service-worker.js": "/ppduss/portfolioservice-worker.js",
+    "static/css/2.4fdbf1be.chunk.css.map": "/ppduss/portfoliostatic/css/2.4fdbf1be.chunk.css.map",
+    "static/css/main.189c952d.chunk.css.map": "/ppduss/portfoliostatic/css/main.189c952d.chunk.css.map",
+    "static/js/2.2f5ef2c2.chunk.js.LICENSE.txt": "/ppduss/portfoliostatic/js/2.2f5ef2c2.chunk.js.LICENSE.txt",
+    "static/media/face3.jpg": "/ppduss/portfoliostatic/media/face3.d5363c65.jpg",
+    "static/media/Portfolio.scss": "/ppduss/portfoliostatic/media/ratatap2.db64222b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.47ce2bfd.js",
+    "static/css/2.4fdbf1be.chunk.css",
+    "static/js/2.2f5ef2c2.chunk.js",
+    "static/css/main.189c952d.chunk.css",
+    "static/js/main.a95fc366.chunk.js"
+  ]
+}
