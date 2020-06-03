@@ -1,4 +1,4 @@
-This AWESOME project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This somewhat AWESOME project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
