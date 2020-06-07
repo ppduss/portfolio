@@ -8,7 +8,6 @@
     "@testing-library/user-event": "^7.2.1",
     "animate.css": "^4.1.0",
     "express": "^4.17.1",
-    "homepage": "http://ppduss.github.io/portfolio",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -41,17 +40,17 @@
   "devDependencies": {
     "gh-pages": "^2.2.0"
   },
-  "description": "This AWESOME project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "This FUN project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ppduss/portfolio.git"
   },
-  "author": "",
+  "author": "ppduss",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ppduss/portfolio/issues"
   },
-  "homepage": "https://github.com/ppduss/portfolio#readme",
+  "homepage": "https://github.com/ppduss/portfolio/src",
   "keywords": []
 }
