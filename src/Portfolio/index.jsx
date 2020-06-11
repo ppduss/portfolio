@@ -16,9 +16,9 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div id="transition1"></div>
+      {/* <div id="transition1"></div> */}
       <div id="transition2"></div>
-      <div id="transition3"></div>
+      {/* <div id="transition3"></div> */}
       <div className="project_container">
         <div className="block">
           <div className="project" id="Mars">
@@ -29,11 +29,12 @@ const App = () => {
           </div>
           <div className="tools" >
             <div>React</div>
-            <div>CSS3</div>
+            <div>SCSS</div>
             <div>HTML5</div>
-            <div>Responsive</div>
+            <div>Grid</div>
+            <div>API</div>
             <div className="button"><a href="https://combustionphotography.com/">View live</a></div>
-            <div className="button"><a href="https://combustionphotography.com/">View on GitHub</a></div>
+            <div className="button"><a href="https://github.com/ppduss/TheMarsWeatherNetwork">View on GitHub</a></div>
           </div>
         </div>
         <div className="block">
@@ -41,9 +42,9 @@ const App = () => {
             <div>React</div>
             <div>CSS3</div>
             <div>HTML5</div>
-            <div>Responsive</div>
+            <div>Flexbox</div>
             <div className="button"><a href="https://combustionphotography.com/">View live</a></div>
-            <div className="button"><a href="https://combustionphotography.com/">View on GitHub</a></div>
+            <div className="button"><a href="https://github.com/ppduss/Coffee-Prescriber">View on GitHub</a></div>
           </div>
           <div className="project" id="Coffee">
            <div id="coffeeBox">
@@ -65,7 +66,7 @@ const App = () => {
             <div>HTML5</div>
             <div>test</div>
              <div className="button"><a href="https://combustionphotography.com/">View live</a></div>
-            <div className="button"><a href="https://combustionphotography.com/">View on GitHub</a></div>
+            <div className="button"><a href="https://github.com/ppduss/Ratatap">View on GitHub</a></div>
           </div>
         </div>
         <div className="block">
