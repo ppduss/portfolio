@@ -22,7 +22,7 @@ const App = () => {
           <div className="project" id="Mars">
            <div id="marsBox">
             <div className="title ">The Mars Weather Network</div>
-            <div className="subtitle">Weather report of the last seven available Sols (Martian Days) based on data trasmitted from Mars using two NASA APIs.</div>
+            <div className="subtitle">A weather report of the last seven available Sols (Martian days) using on data of two NASA APIs.</div>
             </div>
           </div>
           <div className="tools" >
@@ -31,7 +31,7 @@ const App = () => {
             <div>HTML5</div>
             <div>Grid</div>
             <div>API</div>
-            <div className="button"><a href="https://combustionphotography.com/">View live</a></div>
+            <div className="button"><a href="https://ppduss.github.io/TheMarsWeatherNetwork/">View live</a></div>
             <div className="button"><a href="https://github.com/ppduss/TheMarsWeatherNetwork">View on GitHub</a></div>
           </div>
         </div>
