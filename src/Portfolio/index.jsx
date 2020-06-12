@@ -2,9 +2,7 @@ import React from 'react';
 import './Portfolio.scss';
 import face from '../Assets/face3.jpg';
 
-
 const App = () => {
-
   const Main = (
     <div className="main_container">
       <div className="header_container">
@@ -12,7 +10,7 @@ const App = () => {
           <img className="face" src={face} alt="profile shot" />
           <div className="text_box">
             <div className="greetings">Hi, I'm Patrick</div>
-            <div className="iam">I'm a front-end developer living in Montréal.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus distinctio eum at iure veritatis ab tempore, tenetur,</div>
+            <div className="iam">I'm a front-end developer living in Montréal. I love creating beautiful and engaging websites built with elegant code.</div>
           </div>
         </div>
       </div>
@@ -24,7 +22,7 @@ const App = () => {
           <div className="project" id="Mars">
            <div id="marsBox">
             <div className="title ">The Mars Weather Network</div>
-            <div className="subtitle">A X-day weather report using the latest data trasmitted from Mars using two NASA APIs.</div>
+            <div className="subtitle">Weather report of the last seven available Sols (Martian Days) based on data trasmitted from Mars using two NASA APIs.</div>
             </div>
           </div>
           <div className="tools" >
@@ -57,7 +55,7 @@ const App = () => {
           <div className="project" id="Ratatap">
             <a href="https://youtu.be/OX1kVVcx0Xw" id="photoBox">
             <div className="title "> Ratatap </div>
-            <div className="subtitle"> Patatap drum pad clone</div>
+            <div className="subtitle">A clone of the patatap.com drum pads</div>
             </a>
           </div>
           <div className="tools">
@@ -65,7 +63,7 @@ const App = () => {
             <div>CSS3</div>
             <div>HTML5</div>
             <div>test</div>
-             <div className="button"><a href="https://combustionphotography.com/">View live</a></div>
+             <div className="button"><a href="https://youtu.be/OX1kVVcx0Xw">Watch Video</a></div>
             <div className="button"><a href="https://github.com/ppduss/Ratatap">View on GitHub</a></div>
           </div>
         </div>
