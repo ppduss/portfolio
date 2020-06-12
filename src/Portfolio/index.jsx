@@ -71,12 +71,9 @@ const App = () => {
         </div>
         <div className="block">
         <div className="tools even">
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
+            <div>Adobe Lightroom</div>
+            <div>Adobe Portfolio</div>
            <div className="button"><a href="https://combustionphotography.com/">View live</a></div>
-            <div className="button"><a href="https://combustionphotography.com/">View on GitHub</a></div>
         </div>
         <div className="project" id="Photo">
           <div id="photoBox">
