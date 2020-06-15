@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/patrickd.dev/static/css/main.0e07ce80.chunk.css",
-    "main.js": "/patrickd.dev/static/js/main.41fdf648.chunk.js",
-    "main.js.map": "/patrickd.dev/static/js/main.41fdf648.chunk.js.map",
-    "runtime-main.js": "/patrickd.dev/static/js/runtime-main.ab25d57b.js",
-    "runtime-main.js.map": "/patrickd.dev/static/js/runtime-main.ab25d57b.js.map",
-    "static/css/2.4fdbf1be.chunk.css": "/patrickd.dev/static/css/2.4fdbf1be.chunk.css",
-    "static/js/2.2f5ef2c2.chunk.js": "/patrickd.dev/static/js/2.2f5ef2c2.chunk.js",
-    "static/js/2.2f5ef2c2.chunk.js.map": "/patrickd.dev/static/js/2.2f5ef2c2.chunk.js.map",
-    "index.html": "/patrickd.dev/index.html",
-    "precache-manifest.bca7ce892bd2502c4f164d5ae20c94e6.js": "/patrickd.dev/precache-manifest.bca7ce892bd2502c4f164d5ae20c94e6.js",
-    "service-worker.js": "/patrickd.dev/service-worker.js",
-    "static/css/2.4fdbf1be.chunk.css.map": "/patrickd.dev/static/css/2.4fdbf1be.chunk.css.map",
-    "static/css/main.0e07ce80.chunk.css.map": "/patrickd.dev/static/css/main.0e07ce80.chunk.css.map",
-    "static/js/2.2f5ef2c2.chunk.js.LICENSE.txt": "/patrickd.dev/static/js/2.2f5ef2c2.chunk.js.LICENSE.txt",
-    "static/media/face3.jpg": "/patrickd.dev/static/media/face3.d5363c65.jpg",
-    "static/media/Portfolio.scss": "/patrickd.dev/static/media/ratatap2.db64222b.png"
+    "main.css": "/static/css/main.19953f7e.chunk.css",
+    "main.js": "/static/js/main.e5ccbb46.chunk.js",
+    "main.js.map": "/static/js/main.e5ccbb46.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7c0ae09a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7c0ae09a.js.map",
+    "static/css/2.4fdbf1be.chunk.css": "/static/css/2.4fdbf1be.chunk.css",
+    "static/js/2.2f5ef2c2.chunk.js": "/static/js/2.2f5ef2c2.chunk.js",
+    "static/js/2.2f5ef2c2.chunk.js.map": "/static/js/2.2f5ef2c2.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1cd0d645c277514584aa4874fbc06cf5.js": "/precache-manifest.1cd0d645c277514584aa4874fbc06cf5.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.4fdbf1be.chunk.css.map": "/static/css/2.4fdbf1be.chunk.css.map",
+    "static/css/main.19953f7e.chunk.css.map": "/static/css/main.19953f7e.chunk.css.map",
+    "static/js/2.2f5ef2c2.chunk.js.LICENSE.txt": "/static/js/2.2f5ef2c2.chunk.js.LICENSE.txt",
+    "static/media/face3.jpg": "/static/media/face3.d5363c65.jpg",
+    "static/media/Portfolio.scss": "/static/media/ratatap2.db64222b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ab25d57b.js",
+    "static/js/runtime-main.7c0ae09a.js",
     "static/css/2.4fdbf1be.chunk.css",
     "static/js/2.2f5ef2c2.chunk.js",
-    "static/css/main.0e07ce80.chunk.css",
-    "static/js/main.41fdf648.chunk.js"
+    "static/css/main.19953f7e.chunk.css",
+    "static/js/main.e5ccbb46.chunk.js"
   ]
 }
