@@ -6,10 +6,10 @@ a:link {
 }
 @keyframes openSesame {
   from {
-    width: 50%;
+    width: 20%;
   }
   to {
-    width: 60%;
+    width: 55%;
   }
 }
 @mixin projectTitles($background, $border, $font) {
@@ -23,18 +23,20 @@ a:link {
 }
 
 .footer {
-  margin-top: 150px;
+  margin-top: 250px;
   height: 100px;
   width: 100%;
   background-color: $col2c;
+  color: $col1a;
 }
 .title {
     text-align: center;
     margin-top: 14px;
     width: 600px;
     font-size: 1rem;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-name: fadeIn;
+    animation-timing-function: ease-in;
     z-index: 3;
     @media (min-width: 480px){
       font-size: 1.3rem;
@@ -51,13 +53,14 @@ a:link {
   }
 .subtitle {
     text-align: center;
-    margin-top: 4px;
+    margin-top: 3px;
     margin-bottom: 20px;
     width: 70%;
     font-size: 0.7rem;
     color: $col2d;
     animation-duration: 4s;
     animation-name: fadeIn;
+    animation-timing-function: ease-in;
     z-index: 3;
     @media (min-width: 480px){
       font-size: 0.8rem;
@@ -91,7 +94,21 @@ a:link {
   flex-direction: column;
   align-items: center;
   animation-name: fadeIn;
+  @include projectTitles(rgb(19, 19, 19), $col2d, rgb(247, 65, 65))
+}
+#ratatapBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: fadeIn;
   @include projectTitles(rgb(19, 19, 19), $col2d, rgb(253, 82, 110))
+}
+#RGBBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: fadeIn;
+  @include projectTitles(rgb(18, 17, 53), $col2d, rgb(252, 229, 130))
 }
 
 .main_container {
@@ -330,27 +347,34 @@ a:link {
   // background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: openSesame 3s;
+  animation: openSesame 2.5s;
 };
 #Coffee {
   margin-left: 4%;
   background-color: #5a462b;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='670' height='80.4' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23815e31' stroke-width='20' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
-  animation: openSesame 3s;
+  animation: openSesame 2.5s;
 }
 #Photo {
-  margin-left: 4%;
+  margin-right: 4%;
   background-color: white;
   background-image: url(../Assets/greenery.jpeg);
   background-size: cover;
-  animation: openSesame 3s;
+  animation: openSesame 2.5s;
+}
+#RGB {
+  margin-left: 4%;
+  background-color: white;
+  background-image: url(../Assets/rgbimage.png);
+  background-size: cover;
+  animation: openSesame 2.5s;
 }
 #Ratatap {
   margin-right: 4%;
   background-color: white;
   background-image: url(../Assets/ratatap2.png);
   background-size: cover;
-  animation: openSesame 3s;
+  animation: openSesame 2.5s;
 }
 
 .tools {
@@ -383,6 +407,9 @@ a:link {
   justify-content: center;
   display: flex;
   align-items: flex-end;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(1,.22,.52,.96);
 }
 .even {
   display: flex;
@@ -415,4 +442,10 @@ a:link {
   @media (min-width: 1200px){
       font-size: 1.1rem;
   }
+}
+
+#NSFW {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: red;
 }
