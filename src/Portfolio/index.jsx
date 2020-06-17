@@ -1,6 +1,7 @@
 import React from 'react';
 import './Portfolio.scss';
 import face from '../Assets/face3.jpg';
+import linkedin from '../Assets/linkedin.png';
 
 const App = () => {
   const Main = (
@@ -10,8 +11,11 @@ const App = () => {
           <img className="face" src={face} alt="profile shot" />
           <div className="text_box">
             <div className="greetings">Hi, I'm Patrick</div>
-            <div className="iam">I'm a front-end developer living in Montréal. I love creating beautiful and engaging websites built with elegant code.</div>
+            <div className="iam">I'm a front-end developer based in Montreal. I love creating beautiful and engaging websites built with elegant code.</div>
           </div>
+          <a href="https://www.linkedin.com/in/patrickdussault/">
+                <img className="linkedin" alt="linkedin" src={linkedin} height="40"></img>
+            </a>
         </div>
       </div>
       {/* <div id="transition1"></div> */}
@@ -22,15 +26,15 @@ const App = () => {
           <div className="project" id="Mars">
            <a href="https://ppduss.github.io/TheMarsWeatherNetwork/" id="marsBox">
             <div className="title ">The Mars Weather Network</div>
-            <div className="subtitle">A weather report of the last seven available Sols (Martian days) using on data of two NASA APIs.</div>
+            <div className="subtitle">A weather report of the last seven available Sols (Martian days) using data from two NASA APIs.</div>
             </a>
           </div>
           <div className="tools" >
             <div>React</div>
-            <div>CSS3 + SCSS</div>
-            <div>HTML5</div>
-            <div>Grid + Flexbox</div>
             <div>API</div>
+            <div>HTML5</div>
+            <div>CSS3 + SCSS</div>
+            <div>Grid + Flexbox</div>
             <div className="button"><a href="https://ppduss.github.io/TheMarsWeatherNetwork/">View live</a></div>
             <div className="button"><a href="https://github.com/ppduss/TheMarsWeatherNetwork">View on GitHub</a></div>
           </div>
@@ -62,7 +66,7 @@ const App = () => {
             <div>CSS3</div>
             <div>HTML5</div>
             <div>Javascript</div>
-             <div className="button"><a href="https://youtu.be/OX1kVVcx0Xw">Watch Video</a></div>
+             <div className="button"><a href="https://youtu.be/OX1kVVcx0Xw">Watch video</a></div>
             <div className="button"><a href="https://github.com/ppduss/Ratatap">View on GitHub</a></div>
           </div>
         </div>
@@ -94,9 +98,14 @@ const App = () => {
            <div className="button"><a href="https://combustionphotography.com/">View live</a></div>
         </div>
         </div>
-        <div className="footer">Thank you AJTJ for your help.</div>
+        <a id="contactme" href="https://www.linkedin.com/in/patrickdussault/">
+          <img className="linkedin" alt="linkedin" src={linkedin} height="40"></img>
+          <div>Please contact me via LinkedIn</div>
+        </a>
       </div>
-   </div>
+      <div className="footer">
+      </div>
+    </div>
   )
 
   return Main
