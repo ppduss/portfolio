@@ -58,13 +58,23 @@ a:-webkit-any-link {
   }
 }
 
-@mixin projectTitles($background, $border, $font) {
+@mixin projectTitles($background, $font) {
   background-color: $background;
-  border: 8px solid $border;
+  border: 4px solid $col2d;
   color: $font;
   padding-left: 20%;
   padding-right: 20%;
   border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: fadeIn;
+  &:hover {
+    border: 7px solid $col2d;
+  }
+  &:active {
+    border: 7px solid black;
+  }
 }
 
 .footer {
@@ -104,91 +114,6 @@ a:-webkit-any-link {
 }
 .linkedin {
   margin: 15px;
-}
-
-.title {
-    text-align: center;
-    margin-top: 14px;
-    width: 600px;
-    font-size: 1rem;
-    animation-duration: 3s;
-    animation-name: fadeIn;
-    animation-timing-function: ease-in;
-    z-index: 3;
-    @media (min-width: 480px){
-      font-size: 1.3rem;
-    }
-    @media (min-width: 768px){
-      font-size: 1.5rem;
-    }
-    @media (min-width: 992px){
-      font-size: 1.6rem;
-    }
-    @media (min-width: 1200px){
-      font-size: 1.9rem;
-    }
-  }
-.subtitle {
-    text-align: center;
-    margin-top: 3px;
-    margin-bottom: 20px;
-    width: 40%;
-    font-size: 0.6rem;
-    color: $col2d;
-    animation-duration: 4s;
-    animation-name: fadeIn;
-    animation-timing-function: ease-in;
-    z-index: 3;
-    @media (min-width: 480px){
-      font-size: 0.8rem;
-      width: 50%;
-    }
-    @media (min-width: 768px){
-      font-size: 0.9rem;
-    }
-    @media (min-width: 992px){
-      font-size: 1rem;
-      width: 60%;
-    }
-    @media (min-width: 1200px){
-      font-size: 1.1rem;
-      width: 75%;
-    }
- }
-#marsBox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation-name: fadeIn;
-  @include projectTitles($col2a, $col2d, $col2b)
-}
-#coffeeBox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation-name: fadeIn;
-  @include projectTitles(rgb(120, 176, 221), $col2d, rgb(83, 53, 22))
-}
-#photoBox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation-name: fadeIn;
-  @include projectTitles(rgb(19, 19, 19), $col2d, rgb(247, 65, 65))
-}
-#ratatapBox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation-name: fadeIn;
-  @include projectTitles(rgb(19, 19, 19), $col2d, rgb(253, 82, 110))
-}
-#RGBBox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation-name: fadeIn;
-  @include projectTitles(rgb(18, 17, 53), $col2d, rgb(252, 229, 130))
 }
 
 .main_container {
@@ -233,12 +158,10 @@ a:-webkit-any-link {
     .face {
       border-radius: 45px 3px;
       width: 100px;
-      // border: 2px solid white;
       margin: 15px;
       @media (min-width: 480px){
         border-radius: 60px 10px;
         width: 150px;
-        // border: 3px solid white;
         margin: 30px;
       }
       @media (min-width: 768px){
@@ -250,7 +173,6 @@ a:-webkit-any-link {
         border-radius: 110px 25px;
         width: 240px;
         margin: 38px;
-        // border: 4px solid whitesmoke;
       }
       @media (min-width: 1200px){
         border-radius: 120px 30px;
@@ -313,6 +235,7 @@ a:-webkit-any-link {
     }
   }
 }
+
 #transition1 {
   // margin-top: 10px;
   background-color: $col2a;
@@ -335,6 +258,8 @@ a:-webkit-any-link {
   // margin-top: 10px;
   background-color: $col2d;
   width: 90%;
+  // border-radius: 0px 0px 0px 0px;
+
   border-bottom: 10px dashed $col2a;
   @media (min-width: 480px){
     width: 90%;
@@ -353,6 +278,7 @@ a:-webkit-any-link {
   // margin-top: 10px;
   background-color: $col2d;
   width: 90%;
+  // border-radius: 0px 0px 10px 10px;
   border-bottom: 10px dashed $col2a;
   @media (min-width: 480px){
     width: 90%;
@@ -376,7 +302,7 @@ a:-webkit-any-link {
   width: 100%;
   height: 1400px;
   background-image: linear-gradient($col2d, $col2d);
-  border-radius: 25px 25px 25px 25px;
+  border-radius:0px 0px 25px 25px;
   @media (min-width: 480px){
     width: 95%;
     height: 1950px;
@@ -394,6 +320,15 @@ a:-webkit-any-link {
     // width: 80%;
    height: 2700px;
   }
+}
+.block {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: flex-end;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(1,.22,.52,.96);
 }
 .project {
   display: flex;
@@ -432,11 +367,13 @@ a:-webkit-any-link {
   margin-right: 4%;
   background-color: #243634;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Ccircle stroke='%23fdc00c' vector-effect='non-scaling-stroke' id='a' fill='none' stroke-width='1' r='315'/%3E%3Cuse id='f' href='%23a' stroke-dasharray='100 100 100 9999'/%3E%3Cuse id='b' href='%23a' stroke-dasharray='250 250 250 250 250 9999'/%3E%3Cuse id='e' href='%23a' stroke-dasharray='1000 500 1000 500 9999'/%3E%3Cuse id='g' href='%23a' stroke-dasharray='1500 9999'/%3E%3Cuse id='h' href='%23a' stroke-dasharray='2000 500 500 9999'/%3E%3Cuse id='j' href='%23a' stroke-dasharray='800 800 800 800 800 9999'/%3E%3Cuse id='k' href='%23a' stroke-dasharray='1200 1200 1200 1200 1200 9999'/%3E%3Cuse id='l' href='%23a' stroke-dasharray='1600 1600 1600 1600 1600 9999'/%3E%3C/defs%3E%3Cg transform='translate(1000 750)' %3E%3Cg transform='rotate(100.8 0 0)' %3E%3Ccircle fill='%23fdc00c' r='10'/%3E%3Cg %3E%3Cuse href='%23f' transform='scale(.1) rotate(50 0 0)' /%3E%3Cuse href='%23f' transform='scale(.2) rotate(100 0 0)' /%3E%3Cuse href='%23f' transform='scale(.3) rotate(150 0 0)' /%3E%3C/g%3E%3Cg transform='rotate(-19.2 0 0)'%3E%3Cuse href='%23b' transform='scale(.4) rotate(200 0 0)' /%3E%3Cuse href='%23z' transform='scale(.5) rotate(250 0 0)' /%3E%3C/g%3E%3Cg id='z' transform=''%3E%3Cg transform='rotate(63 0 0)'%3E%3Cuse href='%23b'/%3E%3Cuse href='%23b' transform='scale(1.2) rotate(90 0 0)' /%3E%3Cuse href='%23b' transform='scale(1.4) rotate(60 0 0)' /%3E%3Cuse href='%23e' transform='scale(1.6) rotate(120 0 0)' /%3E%3Cuse href='%23e' transform='scale(1.8) rotate(30 0 0)' /%3E%3C/g%3E%3C/g%3E%3Cg id='y' transform='rotate(86.4 0 0)'%3E%3Cg transform='rotate(37.8 0 0)'%3E%3Cuse href='%23e' transform='scale(1.1) rotate(20 0 0)' /%3E%3Cuse href='%23g' transform='scale(1.3) rotate(-40 0 0)' /%3E%3Cuse href='%23g' transform='scale(1.5) rotate(60 0 0)' /%3E%3Cuse href='%23h' transform='scale(1.7) rotate(-80 0 0)' /%3E%3Cuse href='%23j' transform='scale(1.9) rotate(100 0 0)' /%3E%3C/g%3E%3C/g%3E%3Cg transform='rotate(-75.6 0 0)'%3E%3Cg transform=''%3E%3Cg transform='rotate(-115.2 0 0)'%3E%3Cuse href='%23h' transform='scale(2) rotate(60 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.1) rotate(120 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.3) rotate(180 0 0)'/%3E%3Cuse href='%23h' transform='scale(2.4) rotate(240 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.5) rotate(300 0 0)'/%3E%3C/g%3E%3Cuse href='%23y' transform='scale(2) rotate(180 0 0)' /%3E%3Cuse href='%23j' transform='scale(2.7)'/%3E%3Cuse href='%23j' transform='scale(2.8) rotate(45 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.9) rotate(90 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.1) rotate(135 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.2) rotate(180 0 0)'/%3E%3C/g%3E%3Cuse href='%23k' transform='scale(3.3) rotate(225 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.5) rotate(270 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.6) rotate(315 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.7)'/%3E%3Cuse href='%23k' transform='scale(3.9) rotate(75 0 0)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  // background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   animation: openSesame 2.5s;
   background-position: center;
+  & .box {
+    @include projectTitles($col2a, $col2b)
+  }
 };
 #Coffee {
   margin-left: 4%;
@@ -444,7 +381,9 @@ a:-webkit-any-link {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='670' height='80.4' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23815e31' stroke-width='20' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
   animation: openSesame 2.5s;
   background-position: center;
-
+  & .box {
+    @include projectTitles(rgb(120, 176, 221), rgb(83, 53, 22))
+    } 
 }
 #Photo {
   margin-right: 4%;
@@ -453,6 +392,14 @@ a:-webkit-any-link {
   background-size: cover;
   background-position: center;
   animation: openSesame 2.5s;
+  & .box {
+    @include projectTitles(rgb(19, 19, 19), rgb(247, 65, 65))
+  }
+  & #NSFW {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: red;
+  }
 }
 #RGB {
   margin-left: 4%;
@@ -461,6 +408,9 @@ a:-webkit-any-link {
   background-size: cover;
   background-position: center;
   animation: openSesame 2.5s;
+  & .box {
+    @include projectTitles(rgb(18, 17, 53), rgb(252, 229, 130))
+  }
 }
 #Ratatap {
   margin-right: 4%;
@@ -469,8 +419,60 @@ a:-webkit-any-link {
   background-size: cover;
   background-position: center;
   animation: openSesame 2.5s;
+  & .box {
+    @include projectTitles(rgb(19, 19, 19), rgb(253, 82, 110))
+  }
 }
 
+.title {
+    text-align: center;
+    margin-top: 14px;
+    width: 600px;
+    font-size: 1rem;
+    animation-duration: 3s;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in;
+    z-index: 3;
+    @media (min-width: 480px){
+      font-size: 1.3rem;
+    }
+    @media (min-width: 768px){
+      font-size: 1.5rem;
+    }
+    @media (min-width: 992px){
+      font-size: 1.6rem;
+    }
+    @media (min-width: 1200px){
+      font-size: 1.9rem;
+    }
+  }
+.subtitle {
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    width: 40%;
+    font-size: 0.6rem;
+    color: $col2d;
+    animation-duration: 4s;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in;
+    z-index: 3;
+    @media (min-width: 480px){
+      font-size: 0.8rem;
+      width: 50%;
+    }
+    @media (min-width: 768px){
+      font-size: 0.9rem;
+    }
+    @media (min-width: 992px){
+      font-size: 1rem;
+      width: 60%;
+    }
+    @media (min-width: 1200px){
+      font-size: 1.1rem;
+      width: 75%;
+    }
+ }
 .tools {
   font-family: 'Dosis', sans-serif;
   font-weight: 400;
@@ -478,8 +480,6 @@ a:-webkit-any-link {
   font-size: 0.7rem;
   line-height: 1rem;
   margin-bottom: 20px;
-  // padding-left: 10px;
-  // border-left: 2px solid;
   @media (min-width: 480px){
     font-size: 1rem;
     line-height: 1.3rem;
@@ -496,25 +496,15 @@ a:-webkit-any-link {
       font-size: 1.2rem;
       line-height: 1.8rem;
   }
-  
-}
-.block {
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  align-items: flex-end;
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-timing-function: cubic-bezier(1,.22,.52,.96);
-}
-.even {
+  &.even {
   display: flex;
   flex-direction: column;
   text-align: right;
 }
+  
+}
+
 .button {
-  // color: black;
-  // font-weight: 200;
   background-color: rgb(250, 247, 241);
   font-size: 0.6rem;
   border: 2px solid rgb(53, 53, 53);
@@ -539,10 +529,4 @@ a:-webkit-any-link {
   @media (min-width: 1200px){
       font-size: 1.1rem;
   }
-}
-
-#NSFW {
-  margin-top: 8px;
-  font-size: 1rem;
-  color: red;
 }

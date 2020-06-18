@@ -24,7 +24,7 @@ const App = () => {
       <div className="project_container">
         <div className="block">
           <div className="project" id="Mars">
-           <a href="https://ppduss.github.io/TheMarsWeatherNetwork/" id="marsBox">
+           <a href="https://ppduss.github.io/TheMarsWeatherNetwork/" className="box">
             <div className="title ">The Mars Weather Network</div>
             <div className="subtitle">A weather report of the last seven available Sols (Martian days) using data from two NASA APIs.</div>
             </a>
@@ -49,7 +49,7 @@ const App = () => {
             <div className="button"><a href="https://github.com/ppduss/Coffee-Prescriber">View on GitHub</a></div>
           </div>
           <div className="project" id="Coffee">
-           <a href="https://ppduss.github.io/Coffee-Prescriber/" id="coffeeBox">
+           <a href="https://ppduss.github.io/Coffee-Prescriber/" className="box">
              <div className="title ">Coffee Prescriber</div>
             <div className="subtitle">A playful app that helps gauge your happiness to productivity ratio as your drink coffee and wether it's wise to keep drinking.</div>
           </a>
@@ -57,7 +57,7 @@ const App = () => {
         </div>
         <div className="block">
           <div className="project" id="Ratatap">
-            <a href="https://youtu.be/OX1kVVcx0Xw" id="ratatapBox">
+            <a href="https://youtu.be/OX1kVVcx0Xw" className="box">
             <div className="title "> Ratatap </div>
             <div className="subtitle">A clone of the patatap.com drum pads</div>
             </a>
@@ -79,15 +79,15 @@ const App = () => {
             <div className="button"><a href="https://github.com/ppduss/RGB">View on GitHub</a></div>
           </div>
           <div className="project" id="RGB">
-            <a href="https://ppduss.github.io/RGB/" id="RGBBox">
+            <a href="https://ppduss.github.io/RGB/" className="box">
              <div className="title "> RGB Game</div>
              <div className="subtitle">Guess which box contains the random RGB value!</div>
             </a>
           </div>
         </div>
-        <div className="block">
+        {/* <div className="block">
           <div className="project" id="Photo">
-            <a href="https://combustionphotography.com/" id="photoBox">
+            <a href="https://combustionphotography.com/" className="box">
               <div className="title "> Combustion Photography</div>
               <div className="subtitle">Photographer's portfolio made exclusively with Adobe Creative Cloud applications. <div id="NSFW">(May contain material that is NSFW)</div></div>
             </a>
@@ -97,7 +97,7 @@ const App = () => {
             <div>Adobe Portfolio</div>
            <div className="button"><a href="https://combustionphotography.com/">View live</a></div>
         </div>
-        </div>
+        </div> */}
         <a id="contactme" href="https://www.linkedin.com/in/patrickdussault/">
           <img className="linkedin" alt="linkedin" src={linkedin} height="40"></img>
           <div>Please contact me via LinkedIn</div>
