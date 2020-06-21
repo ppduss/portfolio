@@ -89,20 +89,23 @@ a:-webkit-any-link {
   flex-direction: row;
   background-color: white;
   background-image: linear-gradient($col2d, white, white, $col2d);
+  margin-bottom: 30px;
   margin-top: 60px;
   justify-content: center;
   align-items: center;
   // width: 200px;
   height: 50px;
-  border-radius: 6px;
+  border-radius: 25px;
   font-size: 0.7rem;
   @media (min-width: 480px){
-      margin-top: 60px;
+      margin-bottom: 30px;
+      margin-top: 100px;
       height: 80px;
       font-size: 0.8rem;
     }
     @media (min-width: 768px){
-      margin-top: 80px;
+      margin-top: 140px;
+      margin-bottom: 30px;
       height: 100px;
     }
     @media (min-width: 992px){
@@ -114,8 +117,16 @@ a:-webkit-any-link {
 }
 .linkedin {
   margin: 15px;
+  height: 22px;
+  @media (min-width: 480px){
+    margin: 25px;
+    height: 30px;
+  }
+  @media (min-width: 992px){
+    margin: 35px;
+    height: 40px;
+  }
 }
-
 .main_container {
   display: flex;
   flex-direction: column;
@@ -158,25 +169,30 @@ a:-webkit-any-link {
     .face {
       border-radius: 45px 3px;
       width: 100px;
+      height: 100px;
       margin: 15px;
       @media (min-width: 480px){
         border-radius: 60px 10px;
         width: 150px;
+        height: 150px;
         margin: 30px;
       }
       @media (min-width: 768px){
         border-radius: 90px 20px;
         width: 200px;
+        height: 200px;
         margin: 35px;
       }
       @media (min-width: 992px){
         border-radius: 110px 25px;
         width: 240px;
+        height: 240px;
         margin: 38px;
       }
       @media (min-width: 1200px){
         border-radius: 120px 30px;
         width: 260px;
+        height: 260px;
         margin: 40px;
       }
     }
@@ -300,25 +316,24 @@ a:-webkit-any-link {
   flex-wrap: wrap;
   align-items: left;
   width: 100%;
-  height: 1400px;
+  // height: 1400px;
   background-image: linear-gradient($col2d, $col2d);
   border-radius:0px 0px 25px 25px;
   @media (min-width: 480px){
     width: 95%;
-    height: 1950px;
+    // height: 1950px;
   }
   @media (min-width: 768px){
     width: 85%;
-    height: 2300px;
+    // height: 2300px;
 
   }
   @media (min-width: 992px){
     width: 80%;
-    height: 2600px;
+    // height: 2600px;
   }
   @media (min-width: 1200px){
-    // width: 80%;
-   height: 2700px;
+  //  height: 2700px;
   }
 }
 .block {
@@ -506,6 +521,7 @@ a:-webkit-any-link {
 
 .button {
   background-color: rgb(250, 247, 241);
+  color: blue;
   font-size: 0.6rem;
   border: 2px solid rgb(53, 53, 53);
   border-radius: 3px;
@@ -514,19 +530,39 @@ a:-webkit-any-link {
   text-align: center;
   width: 70px;
   align-self: right;
+  &:hover {
+    font-size:0.65rem;
+    background-color: white;
+  }
+  &:active {
+    border: 2px solid white;
+  }
   @media (min-width: 480px){
     font-size: 0.8rem;
     width: 90px;
+    &:hover {
+    font-size:0.83rem;
+    background-color: white;
+    }
   }
   @media (min-width: 768px){
       font-size: 0.9rem;
       width: 100px;
       margin: 12px 0px 0px 0px;
+      &:hover {
+      font-size:0.93rem;
+      background-color: white;
+      }
   }
   @media (min-width: 992px){
       width: 120px;
   }
   @media (min-width: 1200px){
       font-size: 1.1rem;
+      &:hover {
+      font-size:1.12rem;
+      background-color: white;
+      }
+     
   }
 }

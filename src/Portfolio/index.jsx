@@ -14,7 +14,7 @@ const App = () => {
             <div className="iam">I'm a front-end developer based in Montreal. I love creating beautiful and engaging websites built with elegant code.</div>
           </div>
           <a href="https://www.linkedin.com/in/patrickdussault/">
-                <img className="linkedin" alt="linkedin" src={linkedin} height="40"></img>
+                <img className="linkedin" alt="linkedin" src={linkedin}></img>
             </a>
         </div>
       </div>
@@ -26,7 +26,7 @@ const App = () => {
           <div className="project" id="Mars">
            <a href="https://ppduss.github.io/TheMarsWeatherNetwork/" className="box">
             <div className="title ">The Mars Weather Network</div>
-            <div className="subtitle">A weather report of the last seven available Sols (Martian days) using data from two NASA APIs.</div>
+            <div className="subtitle">A weather report using two NASA APIs that tracks the last seven available Sols (Martian days).</div>
             </a>
           </div>
           <div className="tools" >
@@ -51,7 +51,7 @@ const App = () => {
           <div className="project" id="Coffee">
            <a href="https://ppduss.github.io/Coffee-Prescriber/" className="box">
              <div className="title ">Coffee Prescriber</div>
-            <div className="subtitle">A playful app that helps gauge your happiness to productivity ratio as your drink coffee and wether it's wise to keep drinking.</div>
+            <div className="subtitle">A playful app that tracks your happiness to productivity ratio as your drink coffee and wether it's wise to keep drinking.</div>
           </a>
         </div>
         </div>
