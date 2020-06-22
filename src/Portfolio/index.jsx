@@ -10,15 +10,15 @@ const App = () => {
         <div className="header_content">
           <img className="face" src={face} alt="profile shot" />
           <div className="text_box">
-            <div className="greetings">Hi, I'm Patrick</div>
-            <div className="iam">I'm a front-end developer based in Montreal. I love creating beautiful and engaging websites built with elegant code.</div>
+            <div className="greetings">Hi, I'm Patrick Dussault</div>
+            <div className="iam">I'm a front-end developer based in Montreal. I love creating beautiful and engaging websites built with elegant code. I also have experience working with a wide array of graphic editors, from 3D modeling for manufacturing applications to editing and retouching photography. I'm always interested in exploring new and creative ways to augment a user's experience.</div>
           </div>
           <a href="https://www.linkedin.com/in/patrickdussault/">
                 <img className="linkedin" alt="linkedin" src={linkedin}></img>
             </a>
         </div>
       </div>
-      {/* <div id="transition1"></div> */}
+      <div id="transition1"></div>
       <div id="transition2"></div>
       <div id="transition3"></div>
       <div className="project_container">
@@ -51,7 +51,7 @@ const App = () => {
           <div className="project" id="Coffee">
            <a href="https://ppduss.github.io/Coffee-Prescriber/" className="box">
              <div className="title ">Coffee Prescriber</div>
-            <div className="subtitle">A playful app that tracks your happiness to productivity ratio as your drink coffee and wether it's wise to keep drinking.</div>
+            <div className="subtitle">A playful app that tracks your happiness to productivity ratio as your drink coffee and helps monitor whether it's wise to keep drinking.</div>
           </a>
         </div>
         </div>
