@@ -11,14 +11,14 @@ const App = () => {
           <img className="face" src={face} alt="profile shot" />
           <div className="text_box">
             <div className="greetings">Hi, I'm Patrick Dussault</div>
-            <div className="iam">I'm a front-end developer based in Montreal. I love creating beautiful and engaging websites built with elegant code. I also have experience working with a wide array of graphic editors, from 3D modeling for manufacturing applications to editing and retouching photography. I'm always interested in exploring new and creative ways to augment a user's experience.</div>
+            <div className="iam">I'm a front-end developer based in Montreal. I love creating beautiful and engaging websites built with elegant code. I also have experience working with a wide array of graphic editors, from 3D modeling for manufacturing applications to editing and retouching photography. I'm always interested in exploring new and creative ways to improve user experience.</div>
           </div>
           <a href="https://www.linkedin.com/in/patrickdussault/">
-                <img className="linkedin" alt="linkedin" src={linkedin}></img>
+                <img className="linkedin" id="top" alt="linkedin" src={linkedin}></img>
             </a>
         </div>
       </div>
-      <div id="transition1"></div>
+      {/* <div id="transition1"></div> */}
       <div id="transition2"></div>
       <div id="transition3"></div>
       <div className="project_container">
@@ -55,36 +55,37 @@ const App = () => {
           </a>
         </div>
         </div>
-        <div className="block">
-          <div className="project" id="Ratatap">
-            <a href="https://youtu.be/OX1kVVcx0Xw" className="box">
-            <div className="title "> Ratatap </div>
-            <div className="subtitle">A clone of the patatap.com drum pads</div>
-            </a>
-          </div>
-          <div className="tools">
-            <div>CSS3</div>
-            <div>HTML5</div>
-            <div>Javascript</div>
-             <div className="button"><a href="https://youtu.be/OX1kVVcx0Xw">Watch video</a></div>
-            <div className="button"><a href="https://github.com/ppduss/Ratatap">View on GitHub</a></div>
-          </div>
-        </div>
-        <div className="block">
-          <div className="tools even">
-            <div>HTML5</div>
-            <div>CSS3</div>
-            <div>Javascript</div>
-            <div className="button"><a href="https://ppduss.github.io/RGB/">View live</a></div>
-            <div className="button"><a href="https://github.com/ppduss/RGB">View on GitHub</a></div>
-          </div>
+          <div className="block">
           <div className="project" id="RGB">
             <a href="https://ppduss.github.io/RGB/" className="box">
              <div className="title "> RGB Game</div>
              <div className="subtitle">Guess which box contains the random RGB value!</div>
             </a>
           </div>
+          <div className="tools">
+            <div>HTML5</div>
+            <div>CSS3</div>
+            <div>Javascript</div>
+            <div className="button"><a href="https://ppduss.github.io/RGB/">View live</a></div>
+            <div className="button"><a href="https://github.com/ppduss/RGB">View on GitHub</a></div>
+          </div>
         </div>
+        <div className="block">
+          <div className="tools even">
+            <div>CSS3</div>
+            <div>HTML5</div>
+            <div>Javascript</div>
+             <div className="button"><a href="https://youtu.be/OX1kVVcx0Xw">Watch video</a></div>
+            <div className="button"><a href="https://github.com/ppduss/Ratatap">View on GitHub</a></div>
+          </div>
+          <div className="project" id="Ratatap">
+            <a href="https://youtu.be/OX1kVVcx0Xw" className="box">
+            <div className="title "> Ratatap </div>
+            <div className="subtitle">A clone of the patatap.com drum pads</div>
+            </a>
+          </div>
+        </div>
+
         {/* <div className="block">
           <div className="project" id="Photo">
             <a href="https://combustionphotography.com/" className="box">
@@ -98,10 +99,12 @@ const App = () => {
            <div className="button"><a href="https://combustionphotography.com/">View live</a></div>
         </div>
         </div> */}
-        <a id="contactme" href="https://www.linkedin.com/in/patrickdussault/">
-          <img className="linkedin" alt="linkedin" src={linkedin} height="40"></img>
-          <div>Please contact me via LinkedIn</div>
-        </a>
+        <div id="contact_container">
+          <a id="contact_button" href="https://www.linkedin.com/in/patrickdussault/">
+              <img className="linkedin" alt="linkedin" src={linkedin} height="40"></img>
+              <div>Please contact me via LinkedIn</div>
+          </a>
+        </div>
       </div>
       <div className="footer">
       </div>
