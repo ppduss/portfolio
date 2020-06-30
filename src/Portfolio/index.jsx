@@ -51,7 +51,7 @@ const App = () => {
           <div className="project" id="Coffee">
            <a target="_blank" rel="noopener noreferrer" href="https://ppduss.github.io/Coffee-Prescriber/" className="box">
              <div className="title ">Coffee Prescriber</div>
-            <div className="subtitle">A playful app that tracks your happiness to productivity ratio as your drink coffee and helps monitor whether it's wise to keep drinking.</div>
+            <div className="subtitle">A playful app that tracks your happiness to productivity ratio as you drink coffee and helps monitor whether it's wise to keep drinking.</div>
           </a>
         </div>
         </div>
