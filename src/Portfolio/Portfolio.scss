@@ -157,6 +157,9 @@ a:-webkit-any-link {
 .linkedin {
   margin: 0px 10px 0px 0px;
   height: 18px;
+  &:hover {
+    filter: invert(100%);
+  }
   &#top {
     margin: 0px 25px 0px 0px;
   }
@@ -578,8 +581,8 @@ a:-webkit-any-link {
   font-family: 'Dosis', sans-serif;
   font-weight: 400;
   color: black;
-  font-size: 0.7rem;
-  line-height: 1rem;
+  font-size: 0.6rem;
+  line-height: 0.85rem;
   margin-bottom: 20px;
   @media (min-width: 480px){
     font-size: 1rem;
@@ -601,19 +604,18 @@ a:-webkit-any-link {
   display: flex;
   flex-direction: column;
   text-align: right;
-}
-  
+  }
 }
 
 .button {
   background-color: rgb(250, 247, 241);
-  font-size: 0.6rem;
-  border: 2px solid rgb(53, 53, 53);
+  font-size: 0.55rem;
+  border: 1px solid rgb(53, 53, 53);
   border-radius: 3px;
   margin: 6px 0px 0px 0px;
   padding: 6px 0px;
   text-align: center;
-  width: 70px;
+  width: 58px;
   align-self: right;
   &:hover {
     font-size:0.65rem;
@@ -623,8 +625,9 @@ a:-webkit-any-link {
     border: 2px solid white;
   }
   @media (min-width: 480px){
+    border: 2px solid rgb(53, 53, 53);
     font-size: 0.8rem;
-    width: 90px;
+    width: 82px;
     &:hover {
     font-size:0.83rem;
     background-color: white;
@@ -632,7 +635,7 @@ a:-webkit-any-link {
   }
   @media (min-width: 768px){
       font-size: 0.9rem;
-      width: 100px;
+      width: 95px;
       margin: 12px 0px 0px 0px;
       &:hover {
       font-size:0.93rem;
@@ -640,10 +643,11 @@ a:-webkit-any-link {
       }
   }
   @media (min-width: 992px){
-      width: 120px;
+      width: 100px;
   }
   @media (min-width: 1200px){
       font-size: 1.1rem;
+      width: 120px;
       &:hover {
       font-size:1.12rem;
       background-color: white;
