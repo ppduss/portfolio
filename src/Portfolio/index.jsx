@@ -45,6 +45,7 @@ const App = () => {
             <div>CSS3 + SCSS</div>
             <div>HTML5</div>
             <div>Flexbox</div>
+            <div>d3.js</div>
             <div className="button"><a target="_blank" rel="noopener noreferrer" href="https://ppduss.github.io/Coffee-Prescriber/">View live</a></div>
             <div className="button"><a target="_blank" rel="noopener noreferrer" href="https://github.com/ppduss/Coffee-Prescriber">View on GitHub</a></div>
           </div>
@@ -75,13 +76,15 @@ const App = () => {
             <div>CSS3</div>
             <div>HTML5</div>
             <div>Javascript</div>
-             <div className="button"><a target="_blank" rel="noopener noreferrer" href="https://youtu.be/OX1kVVcx0Xw">Watch video</a></div>
+            <div>Paper.js</div>
+            <div>Howler.js</div>
+             <div className="button"><a target="_blank" rel="noopener noreferrer" href="https://ppduss.github.io/Ratatap/">View Live</a></div>
             <div className="button"><a target="_blank" rel="noopener noreferrer" href="https://github.com/ppduss/Ratatap">View on GitHub</a></div>
           </div>
           <div className="project" id="Ratatap">
             <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/OX1kVVcx0Xw" className="box">
             <div className="title "> Ratatap </div>
-            <div className="subtitle">A clone of the patatap.com drum pads</div>
+            <div className="subtitle">A clone of the patatap.com drum pads using my favorite samples.</div>
             </a>
           </div>
         </div>
