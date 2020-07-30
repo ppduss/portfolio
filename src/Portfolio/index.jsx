@@ -11,7 +11,7 @@ const App = () => {
           <img className="face" src={face} alt="profile shot" />
           <div className="text_box">
             <div className="greetings">Hi, I'm Patrick Dussault</div>
-            <div className="iam">I'm a front-end developer based in Montreal. I love creating beautiful and engaging websites built with elegant code. I'm always interested in exploring new and creative ways to improve user experience and efficiency. I also have experience with a wide array of graphic editors from 3D modeling for manufacturing to editing photography. </div>
+            <div className="iam">I'm a front-end developer based in Montreal who love creating beautiful and engaging websites built with elegant code. Always interested in exploring new and creative ways to improve efficiency user experience. I also have experience with a wide array of software: 2D/3D modeling for manufacturing, 3D printing, CNC programming, and photography editing.</div>
           </div>
           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/patrickdussault/">
                 <img className="linkedin" id="top" alt="linkedin" src={linkedin}></img>
@@ -82,7 +82,7 @@ const App = () => {
             <div className="button"><a target="_blank" rel="noopener noreferrer" href="https://github.com/ppduss/Ratatap">View on GitHub</a></div>
           </div>
           <div className="project" id="Ratatap">
-            <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/OX1kVVcx0Xw" className="box">
+            <a target="_blank" rel="noopener noreferrer" href="https://ppduss.github.io/Ratatap/" className="box">
             <div className="title "> Ratatap </div>
             <div className="subtitle">A clone of the patatap.com drum pads using my favorite samples.</div>
             </a>
