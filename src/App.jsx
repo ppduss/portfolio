@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './App.scss';
-import face from './Assets/face3.jpg';
-import linkedin from './Assets/linkedin.png';
 import styled, { ThemeProvider } from 'styled-components';
 import Button from './Components/Button';
+import linkedin from './Assets/linkedin.png';
+
 // import ThemeButton from './Components/Theme';
 import lightTheme from "./Themes/light";
-import HeaderContainer from './Components/HeaderContainer';
+import Header from './Components/HeaderContainer.jsx';
+
 const App = () => {
   
   // const handleToggleClick = () => {
@@ -16,23 +17,7 @@ const App = () => {
   const Main = (
     <ThemeProvider theme={{theme: lightTheme}}>
       <div className="main_container">
-        {/* <div className="header_container"> */}
-        <HeaderContainer>
-        <div className="header_content">
-          <img className="face" src={face} alt="profile shot" />
-          <div className="text_box">
-            <div className="greetings">Hi, I'm Patrick Dussault</div>
-            <div className="iam">I'm a front-end developer based in Montreal who loves creating beautiful and engaging websites built with elegant code. Always interested in exploring new and creative ways to improve efficiency user experience. I also have experience with 2D/3D modeling for manufacturing, 3D printing, CNC programming, and photography editing.</div>
-          </div>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/patrickdussault/">
-                <img className="linkedin" id="top" alt="linkedin" src={linkedin}></img>
-          </a>
-          {/* <button onClick={() => handleToggleClick()}>toggle light</button> */}
-            {/* <ThemeButton></ThemeButton> */}
-            <button onClick={() => { }}>toggle Dark Mode</button>
-          </div>
-        </HeaderContainer>
-      {/* </div> */}
+        <Header/>
       {/* <div id="transition1"></div> */}
       <div id="transition2"></div>
       <div id="transition3"></div>
