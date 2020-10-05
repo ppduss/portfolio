@@ -1,12 +1,23 @@
-import React from 'react';
-import './Portfolio.scss';
-import face from '../Assets/face3.jpg';
-import linkedin from '../Assets/linkedin.png';
-
+import React, { useState } from 'react';
+import './App.scss';
+import face from './Assets/face3.jpg';
+import linkedin from './Assets/linkedin.png';
+import styled, { ThemeProvider } from 'styled-components';
+import Button from './Components/Button';
+// import ThemeButton from './Components/Theme';
+import lightTheme from "./Themes/light";
+import HeaderContainer from './Components/HeaderContainer';
 const App = () => {
+  
+  // const handleToggleClick = () => {
+  //   setMainTheme(!mainTheme)
+  // }
+
   const Main = (
-    <div className="main_container">
-      <div className="header_container">
+    <ThemeProvider theme={{theme: lightTheme}}>
+      <div className="main_container">
+        {/* <div className="header_container"> */}
+        <HeaderContainer>
         <div className="header_content">
           <img className="face" src={face} alt="profile shot" />
           <div className="text_box">
@@ -16,9 +27,13 @@ const App = () => {
           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/patrickdussault/">
                 <img className="linkedin" id="top" alt="linkedin" src={linkedin}></img>
           </a>
-        </div>
-      </div>
-      <div id="transition1"></div>
+          {/* <button onClick={() => handleToggleClick()}>toggle light</button> */}
+            {/* <ThemeButton></ThemeButton> */}
+            <button onClick={() => { }}>toggle Dark Mode</button>
+          </div>
+        </HeaderContainer>
+      {/* </div> */}
+      {/* <div id="transition1"></div> */}
       <div id="transition2"></div>
       <div id="transition3"></div>
       <div className="project_container">
@@ -35,8 +50,8 @@ const App = () => {
             <div>HTML5</div>
             <div>CSS3 + SCSS</div>
             <div>Grid + Flexbox</div>
-            <div className="button"><a target="_blank" rel="noopener noreferrer" href="https://ppduss.github.io/TheMarsWeatherNetwork/">View live</a></div>
-            <div className="button"><a target="_blank" rel="noopener noreferrer" href="https://github.com/ppduss/TheMarsWeatherNetwork">View on GitHub</a></div>
+            <Button goto='https://ppduss.github.io/TheMarsWeatherNetwork/'>View Live</Button>
+            <Button goto='https://github.com/ppduss/TheMarsWeatherNetwork'>View on GitHub</Button>
           </div>
         </div>
         <div className="block">
@@ -112,6 +127,7 @@ const App = () => {
       <div className="footer">
       </div>
     </div>
+    </ThemeProvider>
   )
 
   return Main
