@@ -54,32 +54,42 @@ const Header = () => {
 `;
   const Face = styled.image`
       background-image: url(${face});
+      width: 100px;
+      height: 100px;
       background-repeat: no-repeat;
       background-position: center;
       border-radius: 45px 3px;
       background-size: 100px;
       margin: 15px;
-      /* @media (min-width: 480px){
+      @media (min-width: 480px){
         border-radius: 60px 10px;
+        width: 150px;
+        height: 150px;
         background-size: 150px;
         margin: 25px 18px 18px 25px;
       }
       @media (min-width: 768px){
         border-radius: 90px 20px;
+        width: 230px;
+        height: 230px;
         background-size: 230px;
         margin: 30px;
       }
       @media (min-width: 992px){
         border-radius: 110px 25px;
+        width: 230px;
+        height: 230px;
         background-size: 230px;
         margin: 38px;
-      } */
-      /* @media (min-width: 1200px){
+      }
+      @media (min-width: 1200px){
         border-radius: 120px 30px;
+        width: 260px;
+        height: 260px;
         background-size: 260px;
         margin: 40px;
 
-      } */
+      }
   `;
    const TextBox = styled.div`
       max-width: 90%;
@@ -147,7 +157,7 @@ const Header = () => {
   return (
           <HeaderContainer>
             <HeaderContent>
-              <Face></Face>
+              <Face />
               <TextBox>
                 <Greetings>Hi, I'm Patrick Dussault</Greetings>
                 <IAm>I&apos;m a front-end developer based in Montreal who loves creating beautiful and engaging websites built with elegant code. Always interested in exploring new and creative ways to improve efficiency user experience. I also have experience with 2D/3D modeling for manufacturing, 3D printing, CNC programming, and photography editing.</IAm>
