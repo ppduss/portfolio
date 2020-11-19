@@ -3,6 +3,7 @@ import './App.scss';
 import styled, { ThemeProvider } from 'styled-components';
 import Button from './Components/Button';
 import linkedin from './Assets/linkedin.png';
+import Projects from '../src/Components/Projects';
 
 // import ThemeButton from './Components/Theme';
 import lightTheme from "./Themes/light";
@@ -21,7 +22,8 @@ const App = () => {
       {/* <div id="transition1"></div> */}
       <div id="transition2"></div>
       <div id="transition3"></div>
-      <div className="project_container">
+        <div className="project_container">
+          <Projects title='Mars' Mars/>
         <div className="block">
           <div className="project" id="Mars">
            <a target="_blank" rel="noopener noreferrer" href="https://ppduss.github.io/TheMarsWeatherNetwork/" className="box">

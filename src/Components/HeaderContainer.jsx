@@ -4,6 +4,7 @@ import face from '../Assets/face3.jpg';
 import linkedin from '../Assets/linkedin.png';
 import '../global.scss';
 
+
 const col1a = '#00474f';
 const col1b = '#ed3801';
 const col1c = '#ff8035';
