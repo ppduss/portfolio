@@ -1,13 +1,20 @@
 import React from 'react';
-import Button from './Button';
-import '../App.scss';
-import '../global.scss';
+import Button from '../Button';
+import '../../App.scss';
+import '../../global.scss';
 import styled, { css, keyframes } from "styled-components";
-import breakpoints from './breakpoints';
 import { generateMedia } from "styled-media-query";
+import {marsImg, coffeeImg} from './Backgrounds';
 
 
-const Projects = (title) => {
+const Projects = ({projTheme, ghLink, liveLink, projSkills}) => {
+
+  const themes = {
+    mars: {},
+    coffee: {}
+  }
+
+  const theme = themes.projTheme
 
   const customMedia = generateMedia({
     1200: '1200px',
@@ -86,6 +93,11 @@ const Projects = (title) => {
     overflow: hidden;
     border-radius: 20px;
     margin-top: 30px;
+    background-color: ${props =>
+    props.Mars ? '#243634' : props.Coffee ? '#5a462b' : 'white'};
+    background-image: ${props => 
+    props.Mars ? 'url(marsimg)' : 'blue'};
+
     ${customMedia.greaterThan(480)`
       margin-top: 70px;
       width: 70%;
@@ -109,10 +121,9 @@ const Projects = (title) => {
     `};
   `;
 
-  const Mars = styled.div`
+  const Mars = styled(Project)`
     margin-right: 4%;
-    background-color: #243634;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Ccircle stroke='%23fdc00c' vector-effect='non-scaling-stroke' id='a' fill='none' stroke-width='1' r='315'/%3E%3Cuse id='f' href='%23a' stroke-dasharray='100 100 100 9999'/%3E%3Cuse id='b' href='%23a' stroke-dasharray='250 250 250 250 250 9999'/%3E%3Cuse id='e' href='%23a' stroke-dasharray='1000 500 1000 500 9999'/%3E%3Cuse id='g' href='%23a' stroke-dasharray='1500 9999'/%3E%3Cuse id='h' href='%23a' stroke-dasharray='2000 500 500 9999'/%3E%3Cuse id='j' href='%23a' stroke-dasharray='800 800 800 800 800 9999'/%3E%3Cuse id='k' href='%23a' stroke-dasharray='1200 1200 1200 1200 1200 9999'/%3E%3Cuse id='l' href='%23a' stroke-dasharray='1600 1600 1600 1600 1600 9999'/%3E%3C/defs%3E%3Cg transform='translate(1000 750)' %3E%3Cg transform='rotate(100.8 0 0)' %3E%3Ccircle fill='%23fdc00c' r='10'/%3E%3Cg %3E%3Cuse href='%23f' transform='scale(.1) rotate(50 0 0)' /%3E%3Cuse href='%23f' transform='scale(.2) rotate(100 0 0)' /%3E%3Cuse href='%23f' transform='scale(.3) rotate(150 0 0)' /%3E%3C/g%3E%3Cg transform='rotate(-19.2 0 0)'%3E%3Cuse href='%23b' transform='scale(.4) rotate(200 0 0)' /%3E%3Cuse href='%23z' transform='scale(.5) rotate(250 0 0)' /%3E%3C/g%3E%3Cg id='z' transform=''%3E%3Cg transform='rotate(63 0 0)'%3E%3Cuse href='%23b'/%3E%3Cuse href='%23b' transform='scale(1.2) rotate(90 0 0)' /%3E%3Cuse href='%23b' transform='scale(1.4) rotate(60 0 0)' /%3E%3Cuse href='%23e' transform='scale(1.6) rotate(120 0 0)' /%3E%3Cuse href='%23e' transform='scale(1.8) rotate(30 0 0)' /%3E%3C/g%3E%3C/g%3E%3Cg id='y' transform='rotate(86.4 0 0)'%3E%3Cg transform='rotate(37.8 0 0)'%3E%3Cuse href='%23e' transform='scale(1.1) rotate(20 0 0)' /%3E%3Cuse href='%23g' transform='scale(1.3) rotate(-40 0 0)' /%3E%3Cuse href='%23g' transform='scale(1.5) rotate(60 0 0)' /%3E%3Cuse href='%23h' transform='scale(1.7) rotate(-80 0 0)' /%3E%3Cuse href='%23j' transform='scale(1.9) rotate(100 0 0)' /%3E%3C/g%3E%3C/g%3E%3Cg transform='rotate(-75.6 0 0)'%3E%3Cg transform=''%3E%3Cg transform='rotate(-115.2 0 0)'%3E%3Cuse href='%23h' transform='scale(2) rotate(60 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.1) rotate(120 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.3) rotate(180 0 0)'/%3E%3Cuse href='%23h' transform='scale(2.4) rotate(240 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.5) rotate(300 0 0)'/%3E%3C/g%3E%3Cuse href='%23y' transform='scale(2) rotate(180 0 0)' /%3E%3Cuse href='%23j' transform='scale(2.7)'/%3E%3Cuse href='%23j' transform='scale(2.8) rotate(45 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.9) rotate(90 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.1) rotate(135 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.2) rotate(180 0 0)'/%3E%3C/g%3E%3Cuse href='%23k' transform='scale(3.3) rotate(225 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.5) rotate(270 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.6) rotate(315 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.7)'/%3E%3Cuse href='%23k' transform='scale(3.9) rotate(75 0 0)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url(${marsImg});
     background-repeat: no-repeat;
     background-size: cover;
     animation: ${openSesame} 2.5s;
@@ -125,7 +136,6 @@ const Projects = (title) => {
   `;
   const Coffee = styled.div`
     margin-left: 4%;
-    background-color: #5a462b;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='670' height='80.4' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23815e31' stroke-width='20' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
     animation: ${openSesame} 2.5s;
     background-position: center;
@@ -138,7 +148,6 @@ const Projects = (title) => {
 
   const RGB = styled.div`
     margin-right: 4%;
-    background-color: white;
     background-image: url(./Assets/rgbimage.png);
     background-size: cover;
     background-position: center;
@@ -149,7 +158,6 @@ const Projects = (title) => {
   `;
   const Ratatap = styled.div`
     margin-left: 4%;
-    background-color: white;
     background-image: url(./Assets/ratatap2.png);
     background-size: cover;
     background-position: center;
@@ -191,20 +199,20 @@ const Projects = (title) => {
 
   return (
     <Block>
-      <Project id={title}>
-        <a target="_blank" rel="noopener noreferrer" href="https://ppduss.github.io/TheMarsWeatherNetwork/" className="box">
+      <Project>
+        <a target="_blank" rel="noopener noreferrer" href={liveLink} className="box">
           <div className="title ">The Mars Weather Network</div>
           <div className="subtitle">A weather report using two NASA APIs that tracks the last seven available Sols (Martian days).</div>
         </a>
       </Project>
       <Tools>
-            <div>React</div>
-            <div>API</div>
-            <div>HTML5</div>
-            <div>CSS3 + SCSS</div>
-            <div>Grid + Flexbox</div>
-            <Button goto='https://ppduss.github.io/TheMarsWeatherNetwork/'>View Live</Button>
-            <Button goto='https://github.com/ppduss/TheMarsWeatherNetwork'>View on GitHub</Button>
+        {projSkills.map((s, i) => {
+          return (
+            <div key={i + s}>{s}</div>
+          )
+        })}
+        {ghLink && <Button goto={ghLink}>View on GitHub</Button>}
+        {liveLink && <Button goto={liveLink}>View Live</Button>}
       </Tools>
     </Block>
   )

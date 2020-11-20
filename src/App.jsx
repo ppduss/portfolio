@@ -3,10 +3,10 @@ import './App.scss';
 import styled, { ThemeProvider } from 'styled-components';
 import Button from './Components/Button';
 import linkedin from './Assets/linkedin.png';
-import Projects from '../src/Components/Projects';
-
+import Project from './Components/Project/Project';
+import {marsImg, coffeeImg} from './Components/Project/Backgrounds';
 // import ThemeButton from './Components/Theme';
-import lightTheme from "./Themes/light";
+// import lightTheme from "./Themes/light";
 import Header from './Components/HeaderContainer.jsx';
 
 const App = () => {
@@ -16,15 +16,16 @@ const App = () => {
   // }
 
   const Main = (
-    <ThemeProvider theme={{theme: lightTheme}}>
+    // <ThemeProvider theme={{theme: lightTheme}}>
       <div className="main_container">
         <Header/>
       {/* <div id="transition1"></div> */}
       <div id="transition2"></div>
       <div id="transition3"></div>
         <div className="project_container">
-          <Projects title='Mars' Mars/>
-        <div className="block">
+          {/* <Projects Mars /> */}
+          <Project img={marsImg} live={'https://ppduss.github.io/TheMarsWeatherNetwork/'} github={"https://ppduss.github.io/TheMarsWeatherNetwork/"} projSkills={['HTML5', "CSS3 - SCSS", , 'Flexbox + Grid', "React", 'API']} />
+        {/* <div className="block">
           <div className="project" id="Mars">
            <a target="_blank" rel="noopener noreferrer" href="https://ppduss.github.io/TheMarsWeatherNetwork/" className="box">
             <div className="title ">The Mars Weather Network</div>
@@ -89,7 +90,7 @@ const App = () => {
             <div className="subtitle">A clone of the patatap.com drum pads using my favorite samples.</div>
             </a>
           </div>
-        </div>
+        </div> */}
 
         {/* <div className="block">
           <div className="project" id="Photo">
@@ -114,7 +115,7 @@ const App = () => {
       <div className="footer">
       </div>
     </div>
-    </ThemeProvider>
+    // </ThemeProvider>
   )
 
   return Main
